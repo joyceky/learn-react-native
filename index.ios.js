@@ -1,55 +1,25 @@
-/**
-EXECUTED ON IOS STARTUP
+/*
+EXECUTED ON IOS STARTUP - if developing for IOS, code here
 
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+React vs react-native
+REACT creates our components, knows how they should behave,
+and makes them work together
 
-import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+REACT-NATIVE provides basic mobile components and renders
+them on the mobile screen
+*/
 
-export default class albums extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
-    );
-  }
-}
+// Import a library to create a Component
+import React from 'react';
+import ReactNative from 'react-native';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+// Create a Component - Objects that create text or content to render
+// Components use JSX, which looks like html but compiles to javascript
+const App = () => {
+  return (
+    <Text>Some Text</Text>
+  );
+};
 
-AppRegistry.registerComponent('albums', () => albums);
+// Render it to the device
+ReactNative.AppRegistry.registerComponent('albums', () => App);
