@@ -7,6 +7,11 @@ import { Text, View } from 'react-native';
 // Create a Component - Objects that create text or content to render
 // Components use JSX, which looks like html but compiles to javascript
 class AlbumList extends Component {
+  // lifecycle method
+  componentWillMount() {
+    console.log('componentWillMount in Album List');
+  }
+
   render() {
     return (
       <View>
