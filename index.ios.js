@@ -19,7 +19,7 @@ import Header from './src/components/header';
 // Create a Component - Objects that create text or content to render
 // Components use JSX, which looks like html but compiles to javascript
 const App = () => (
-    <Header />
+    <Header headerText={'Albums'} />
   );
 
 // Render it to the device with ReactNative
