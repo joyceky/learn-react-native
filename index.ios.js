@@ -1,4 +1,6 @@
 /**
+EXECUTED ON IOS STARTUP
+
  * Sample React Native App
  * https://github.com/facebook/react-native
  * @flow
