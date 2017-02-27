@@ -11,15 +11,14 @@ them on the mobile screen
 
 // Import a library to create a Component
 import React from 'react';
-import ReactNative from 'react-native';
+// import destructuring used to import only what is needed from react-native
+import { Text, AppRegistry } from 'react-native';
 
 // Create a Component - Objects that create text or content to render
 // Components use JSX, which looks like html but compiles to javascript
-const App = () => {
-  return (
+const App = () => (
     <Text>Some Text</Text>
   );
-};
 
-// Render it to the device
-ReactNative.AppRegistry.registerComponent('albums', () => App);
+// Render it to the device with ReactNative
+AppRegistry.registerComponent('albums', () => App);
