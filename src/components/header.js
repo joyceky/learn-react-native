@@ -33,7 +33,6 @@ const styles = {
   textStyle: {
     fontSize: 20
   }
-
 };
 
 // Export component to import in App
